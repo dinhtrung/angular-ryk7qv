@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import * as moment from 'moment';
-import { DATE_FORMAT } from 'app/common/constants/input.constants';
+import { DATE_FORMAT } from '../constants/input.constants';
 import { map } from 'rxjs/operators';
 
-import { SERVER_API_URL } from 'app/app.constants';
-import { createRequestOption } from 'app/common/util/request-util';
+import { SERVER_API_URL } from '../../app.constants';
+import { createRequestOption } from '../util/request-util';
 
 type EntityResponseType = HttpResponse<any>;
 type EntityArrayResponseType = HttpResponse<any[]>;

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FieldArrayType } from '@ngx-formly/core';
 // + HttpClient
 import { HttpClient } from '@angular/common/http';
-import { SERVER_API_URL } from 'app/app.constants';
+import { SERVER_API_URL } from '../../../app/app.constants';
 import * as _ from 'lodash';
 
 @Component({

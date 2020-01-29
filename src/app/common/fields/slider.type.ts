@@ -12,10 +12,14 @@ import { FieldType } from '@ngx-formly/core';
   `
 })
 export class SliderTypeComponent extends FieldType {
-  defaultOptions = {
+  defaultOptions: any = {
+    wrappers: ['form-field'],
     templateOptions: {
-      wrappers: ['form-field'],
-      options: { floor: 0, ceil: 100, step: 5 }
+      options: {
+        floor: 0,
+        ceil: 100,
+        step: 5
+      }
     }
   };
 }

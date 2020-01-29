@@ -38,7 +38,7 @@ import { SafePipe } from './util/safe.pipe';
 import { AppValidators } from './util/app-validators';
 import * as moment from 'moment';
 import { NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
-import { NgbDateMomentAdapter } from 'app/common/util/datepicker-adapter';
+import { NgbDateMomentAdapter } from './util/datepicker-adapter';
 
 @NgModule({
   imports: [

@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { FieldType } from '@ngx-formly/core';
 // + HttpClient
 import { HttpClient } from '@angular/common/http';
-import { SERVER_API_URL } from 'app/app.constants';
+import { SERVER_API_URL } from '../../../app/app.constants';
 import * as _ from 'lodash';
-import { SafePipe } from 'app/common/util/safe.pipe';
+import { SafePipe } from '../../../app/common/util/safe.pipe';
 
 @Component({
   selector: 'jhi-formly-file-upload',

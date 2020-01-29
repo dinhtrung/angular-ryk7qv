@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FieldType } from '@ngx-formly/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { SERVER_API_URL } from 'app/app.constants';
-import { createRequestOption } from 'app/common/util/request-util';
-import { plainToFlattenObject } from 'app/common/util/request-util';
+import { SERVER_API_URL } from '../../../app/app.constants';
+import { createRequestOption } from '../../../app/common/util/request-util';
+import { plainToFlattenObject } from '../../../app/common/util/request-util';
 import * as _ from 'lodash';
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';

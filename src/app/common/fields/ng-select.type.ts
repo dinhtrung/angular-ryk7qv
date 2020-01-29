@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 // + HTTP support
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { SERVER_API_URL } from 'app/app.constants';
-import { createRequestOption } from 'app/common/util/request-util';
-import { plainToFlattenObject } from 'app/common/util/request-util';
+import { SERVER_API_URL } from '../../../app/app.constants';
+import { createRequestOption } from '../../../app/common/util/request-util';
+import { plainToFlattenObject } from '../../../app/common/util/request-util';
 // + ng-select
 import { Subject, of, concat } from 'rxjs';
 import { FieldType } from '@ngx-formly/core';
