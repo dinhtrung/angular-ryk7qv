@@ -12,7 +12,7 @@ import { FieldArrayType } from '@ngx-formly/core';
           <button class="btn btn-danger btn-sm" type="button" (click)="remove(i)"><i class="fas ban"></i> Remove</button>
         </div>
       </div>
-      <button class="btn btn-primary" type="button" (click)="add()"><i class="fas plus"></i> {{ to.addText }}</button>
+      <button class="btn btn-primary" type="button" (click)="add()"><i class="fas plus"></i> {{ to.addText || 'Add Item' }}</button>
     </fieldset>
   `
 })

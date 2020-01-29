@@ -18,10 +18,16 @@ export class AppComponent implements OnInit {
   fields: FormlyFieldConfig[] = [];
   title = 'Formly is Terrific!';
   ready = false;
+  _ = _;
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+    this.options = {
+      formState: {
+        mainModel: this.model
+      }
+    };
     this.httpClient.get('/assets/forms/demo.yaml', { responseType: 'text', observe: 'response' })
     .pipe(
       filter(res => res.ok),

@@ -9,10 +9,12 @@ fields:
       description: A short description about this control
   - key: textareaControl
     type: input
+    expressionProperties:
+      templateOptions.disabled: "!_.get(formState, 'mainModel.inputControl')"
     templateOptions:
       label: Text Area Control
       type: text
-      description:
+      description: This textbox only editable if Input Control is edited
       cols: 80
       rows: 5
   - type: template
@@ -77,6 +79,11 @@ fields:
     templateOptions:
       label: ng-select
       description: ng-select for references select box
+      apiEndpoint: /assets/forms/data.json
+      key: name
+      val: value
+      multiple: true
+      hideSelected: true
   - type: tags
     key: tagsInput
     templateOptions:
