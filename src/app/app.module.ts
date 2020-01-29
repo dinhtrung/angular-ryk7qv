@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@ngx-formly/core';
-import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+// import { ReactiveFormsModule } from '@angular/forms';
+// import { FormlyModule } from '@ngx-formly/core';
+// import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { CommonModule } from './common/common.module';
 
 import { AppComponent } from './app.component';
 import { FormlyFieldCustomInput } from './custom-input.component';
@@ -10,21 +12,23 @@ import { FormlyFieldCustomInput } from './custom-input.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    FormlyBootstrapModule,
-    FormlyModule.forRoot({
-      validationMessages: [
-        { name: 'required', message: 'This field is required' },
-      ],
-      types: [
-        { name: 'custom', component: FormlyFieldCustomInput, wrappers: ['form-field'] },
-      ],
-    }),
+    HttpClientModule,
+    // ReactiveFormsModule,
+    // FormlyBootstrapModule,
+    // FormlyModule.forRoot({
+    //   validationMessages: [
+    //     { name: 'required', message: 'This field is required' },
+    //   ],
+    //   types: [
+    //     { name: 'custom', component: FormlyFieldCustomInput, wrappers: ['form-field'] },
+    //   ],
+    // }),
+    CommonModule
   ],
   bootstrap: [AppComponent],
   declarations: [
-    AppComponent,
-    FormlyFieldCustomInput,
+    AppComponent
+    // FormlyFieldCustomInput,
   ],
 })
 export class AppModule { }

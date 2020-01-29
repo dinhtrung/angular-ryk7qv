@@ -1,6 +1,10 @@
 @import '~bootstrap/scss/bootstrap.scss';
 body { padding: 10px; }
 
+@import '~quill/dist/quill.snow.css';
+@import '~@ng-select/ng-select/themes/default.theme.css';
+@import '~ng5-slider/scss/ng5-slider.scss'
+
 /**  Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license */

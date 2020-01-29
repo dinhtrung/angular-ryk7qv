@@ -1,0 +1,95 @@
+title: Demo Form
+fields:
+  - template: "<div class='alert alert-info'>The source of this form is loaded from YAML format using `js-yaml` library.</div>"
+  - key: inputControl
+    type: input
+    templateOptions:
+      label: Input Control
+      type: text
+      description: A short description about this control
+  - key: textareaControl
+    type: input
+    templateOptions:
+      label: Text Area Control
+      type: text
+      description:
+      cols: 80
+      rows: 5
+  - type: template
+    key: templateInput
+    templateOptions:
+      label: Template
+      description: template Form Control
+  - type: button
+    key: buttonInput
+    templateOptions:
+      label: Button
+      description: button Form Control
+  - type: time
+    key: timeInput
+    templateOptions:
+      label: Time
+      description: time Form Control
+  - type: date
+    key: dateInput
+    templateOptions:
+      label: Date
+      description: date Form Control
+  - type: datetime
+    key: datetimeInput
+    templateOptions:
+      label: Datetime
+      description: datetime Form Control
+  - type: card
+    key: cardInput
+    templateOptions:
+      label: Card
+      description: card Form Control
+  - type: tabset
+    key: tabsetInput
+    templateOptions:
+      label: Tabset
+      description: tabset Form Control
+  - type: file-gridfs
+    key: file-gridfsInput
+    templateOptions:
+      label: file-Gridfs
+      description: file-gridfs Form Control
+  - type: file-upload
+    key: file-uploadInput
+    templateOptions:
+      label: file-Upload
+      description: file-upload Form Control
+  - type: quill
+    key: quillInput
+    templateOptions:
+      label: Quill
+      description: quill Form Control
+  - type: slider
+    key: sliderInput
+    templateOptions:
+      label: Slider
+      description: slider Form Control
+      floor: 0
+      ceil: 100
+  - type: ng-select
+    key: ngSelectInput
+    templateOptions:
+      label: ng-select
+      description: ng-select for references select box
+  - type: tags
+    key: tagsInput
+    templateOptions:
+      label: Tags
+      description: Tags input using `ng-select`
+  - type: repeat
+    key: repeatInput
+    templateOptions:
+      label: Repeat
+      description: repeat Form Control
+    fieldArray:
+      fieldGroup:
+        - key: repeatChildInput
+          type: input
+          templateOptions:
+            label: Repeat Child Input

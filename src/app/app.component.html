@@ -1,9 +1,11 @@
+<div *ngIf="ready">
+<h1 [innerHtml]="title"></h1>
 <form [formGroup]="form" (ngSubmit)="submit()">
   <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
   <button type="submit" class="btn btn-primary submit-button">Submit</button>
   <button type="button" class="btn btn-default" (click)="options.resetModel()">Reset</button>
 </form>
-
+</div>
 
 <!-- Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
